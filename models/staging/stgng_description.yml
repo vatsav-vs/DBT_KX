@@ -1,0 +1,7 @@
+version: 2
+
+models:
+  - name: stg_sales_agent
+    description: This is the staging table for sales incremental data used to rename some columns.
+  - name: eph_sales_agnt
+    description: This is an ephemeral model it doesnot have any structure in snowflake,It is used to filter data with sales_commison >= 0.2, As it is incorrect data according to business standards.
